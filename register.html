@@ -3,31 +3,71 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/loginStyles.css">
+    <link rel="stylesheet" href="CSS/registerStyles.css">
     <title></title>
   </head>
   <body>
 
-    <form >
-      <h3 >Already have an account? <a href="register.html">Log in</a></h3>
-       <div class="container">
+<div class="container">
 
-         <label for="fName"><b>First Name:</b></label>
+  <header>
+     <nav>
+       <ul>
+         <li><a class="regis" href="register.html">Register</a></li>
+         <li><a href="LogIn.html">LogIn</a></li>
+         <li><a href="">My List</a></li>
+       </ul>
+     </nav>
+   </header>
+
+   <nav >
+     <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="">About Us<a/></li>
+       <li><a href="">Services</a></li>
+       <li><a href="">Contact Us<a/></li>
+     </ul>
+   </nav>
+
+
+    <div class="register_text">
+      <h1 >Register</h1>
+    </div>
+
+   <img src="images/tr.jpeg" alt="backgroundImage">
+
+       <div class="register-box">
+
+         <h3 >Already have an account? <a href="LogIn.html">Log in</a></h3>
+         <div class="textbox1">
+         <!-- <label for="fName"><b>First Name:</b></label> -->
          <input type="text" placeholder="FirstName" name="uname" required><br><br>
+         </div>
 
-         <label for="lName"><b>Last Name</b></label>
-         <input type="text" placeholder="LastName" name="password" required><br><br>
+         <div class="textbox1">
+         <!-- <label for="lName"><b>Last Name</b></label> -->
+         <input type="text" placeholder="LastName" name="lname" required><br><br>
+         </div>
 
-         <label for="email"><b>Email:</b></label>
-         <input type="email" placeholder="Email" name="password" required><br><br>
+         <div class="textbox1">
+         <!-- <label for="email"><b>Email:</b></label> -->
+         <input type="email" placeholder="Email" name="email" required><br><br>
+         </div>
 
-         <label for="phoneNumber"><b>Phone no:</b></label>
-         <input type="password" placeholder="0" name="password" required><br><br>
+         <div class="textbox1">
+         <!-- <label for="email"><b>Email:</b></label> -->
+         <input type="password" placeholder="Password" name="password" required><br><br>
+         </div>
+
+         <div class="textbox1">
+         <!-- <label for="phoneNumber"><b>Phone no:</b></label> -->
+         <input type="number" placeholder="Contact No." name="password" required><br><br>
+         </div>
 
          <button type="submit">Register</button>
 
        </div>
 
-    </form>
+    </div>
   </body>
 </html>

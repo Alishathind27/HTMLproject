@@ -2,11 +2,12 @@ body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-
+  /* background-color: #1d1d1c; */
+  /* background: url(images/lgh.jpeg) no-repeat;*/
+  /* background-size: cover; */
 }
 
 header nav ul{
-
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -45,7 +46,6 @@ nav ul{
 
  nav li{
   display: inline;
-
 }
 
  nav li a{
@@ -63,8 +63,6 @@ nav ul{
   background-color: red ;
 }
 
-
-
 body img{
   opacity: 0.4;
   height: 700px;
@@ -79,9 +77,9 @@ body img{
   color: black;
 }
 
-.login_text{
+.register_text{
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%,-50%);
   color: black;
@@ -89,13 +87,13 @@ body img{
   font-family:monospace;
 }
 
-.login-box{
+.register-box{
 
   color: black;
   font-weight: bold;
   border: 3px solid #000000;
   position:absolute;
-  top: 55%;
+  top: 66%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -104,20 +102,20 @@ body img{
   text-align: center;
 }
 
- .login-box h3{
-   float:left;
-  font-size: 20px;
-  padding: 13px 0;
+
+.register-box h3{
+  float:left;
+ font-size: 20px;
+ padding: 7px 0;
 }
 
 .textbox1{
-  width: 100%;
-  overflow: hidden;
-  font-size: 20px;
-  padding: 8px 0;
-  margin: 9px 0;
-  border-bottom: 1px solid ;
-
+ width: 100%;
+ overflow: hidden;
+ font-size: 20px;
+ padding: 8px 0;
+ margin: 9px 0;
+ border-bottom: 1px solid ;
 }
 
 .textbox1 input{
@@ -131,14 +129,12 @@ body img{
   margin: 10px;
 }
 
-.login-box button{
+.register-box button{
 width: 40%;
 background-color: Gray;
-/* border: 2px solid ; */
-/* color: black; */
 padding: 5px;
 font-size: 20px;
 cursor: pointer;
 margin: 12px 0;
-margin-top: 2em;
+margin-bottom: 0.05em;
 }
