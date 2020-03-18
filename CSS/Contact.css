@@ -112,19 +112,13 @@ text-decoration: none;
 #nav2 .dropdown:hover .dropdown-content{
   display: block;
 }
-/* footer {
-  font-size: 0.7em;
-  text-align: center;
-  margin-top: 2em;
-  color: #ffffff;
-  background-color: #000000;
-}
 
 
 
 
-/* styles for anchor tag in footer */
-/* footer a {
+
+
+ footer a {
   color: #ffffff;
   text-decoration: none;
 }
@@ -132,14 +126,24 @@ text-decoration: none;
 
 #copyright {
   float: left;
-  margin-top: 2em;
-  width: 80%;
+  padding: 1em;
+  width: 50%;
+  height: 15em;
+  background-color: #333;
+  margin: auto;
+  padding-top: 5em;
 }
 
 #social {
   float: right;
-  width: 20%;
-} */
+  margin: auto;
+  width: 50%;
+  height: 15em;
+  /* padding: 1em; */
+  padding-top: 5em;
+  background-color: #333;
+
+}
 
 
 
@@ -231,6 +235,51 @@ background-attachment: fixed;
 background-size: cover;
 opacity: 0.9;
 }
+
+footer {
+  font-size: 0.7em;
+  text-align: center;
+  margin-top: 5em;
+  color: #ffffff;
+
+
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  color: #ffffff;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #333;
+  color: white;
+}
+
+.fa-twitter {
+  background: #333;
+  color: white;
+}
+
+.fa-instagram{
+  background: #333;
+  color: white;
+}
+.fa-skype {
+  background: #333;
+  color: white;
+}
+
 /* background: black; */
 
   /* background-color: black; */
