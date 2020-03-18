@@ -111,7 +111,8 @@ text-decoration: none;
   text-align: left;
 }
  #nav2 .dropdown-content a:hover{
-  background-color: #f1f1f1;
+  background-color: #00BFFF;
+  color: black;
 }
 
 
@@ -301,7 +302,7 @@ html {
 }
 
 footer a {
- color: #ffffff;
+ color: #00BFFF;
  text-decoration: none;
 }
 

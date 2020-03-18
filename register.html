@@ -4,35 +4,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/registerStyles.css">
-    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Register Page</title>
   </head>
   <body>
 
+
 <div class="container">
+  <nav id="nav1">
+      <ul>
 
-  <header>
-     <nav>
-       <ul>
-         <li><a class="regis" href="register.html">Register</a></li>
-         <li><a href="LogIn.html">LogIn</a></li>
-         <li><a href="">My List</a></li>
-       </ul>
-     </nav>
-   </header>
+        <li><a class="active" href="register.html">Register</a></li>
+        <li><a href="LogIn.html">LogIn</a></li>
+        <li><a href="#">MyList</a></li>
 
-   <nav >
-     <ul>
-       <li><a href="index.html">Home</a></li>
-       <li><a href="">About Us<a/></li>
-       <li><a href="">Services</a></li>
-       <li><a href="">Contact Us<a/></li>
-     </ul>
-   </nav>
+      </ul>
+    </nav>
+    <nav id="nav2">
+      <ul>
 
 
-    <div class="register_text">
-      <h1 >Register</h1>
-    </div>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="aboutus.html">About Us</a></li>
+  <!-- <li><a href="#">Services</a></li> -->
+    <li class="dropdown"> <a href="#" class="dropbtn"> Services</a>
+
+  <div class="dropdown-content">
+    <a href="#">Hotel Booking Request</a>
+    <a href="#">Flight Ticket Booking Request</a>
+  <a href="#">Accomodation</a>
+  <a href="#">Tour Program Request</a>
+
+  </div>
+
+
+
+      </li>
+  <li><a href="ContactUs.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
 
    <img src="images/tr.jpeg" alt="backgroundImage">
 
@@ -69,5 +80,23 @@
        </div>
 
     </div>
+    <footer class="foot_contact">
+
+      <h3 id="copyright">
+        <!-- <p> -->
+        &copy; Copyright 2020. All Rights Reserved. <br>
+        <a href="mailto:aman021011@gmail.com">travelagency@club.net</a>
+      <!-- </p> -->
+    </h3>
+      <h3 id="social">
+        Connect with Us<br>
+        <!-- <p><a href=""><img src="images/fblogo.png" alt="facebook logo"></a></p> -->
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-skype"></a>
+      </h3>
+
+    </footer>
   </body>
 </html>
