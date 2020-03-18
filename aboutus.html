@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/aboutus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact Page</title>
+  </head>
+  <body>
+    <nav id="nav1">
+    	  <ul>
+
+    	    <li><a href="#">Register</a></li>
+          <li><a href="#">LogIn</a></li>
+    	    <li><a href="#">MyList</a></li>
+
+    	  </ul>
+    	</nav>
+    	<nav id="nav2">
+    	  <ul>
+
+
+    <li><a href="#">Home</a></li>
+    <li><a class="active"href="#">About Us</a></li>
+    <!-- <li><a href="#">Services</a></li> -->
+      <li class="dropdown"> <a href="#" class="dropbtn"> Services</a>
+
+    <div class="dropdown-content">
+      <a href="#">Hotel Booking Request</a>
+      <a href="#">Flight Ticket Booking Request</a>
+    <a href="#">Accomodation</a>
+    <a href="#">Tour Program Request</a>
+
+    </div>
+
+
+
+        </li>
+    <li><a href="#">Contact Us</a></li>
+    	  </ul>
+    	</nav>
+
+
+      <!-- <div class="about-section">
+        <h1>About Us </h1>
+        <p>Our Travel Website is America’s biggest online transport ticketing stage that has changed transport travel in the nation by conveying straightforwardness and comfort to a great many Americas who travel utilizing transports. Established in 2006, ‘Organization Name’ is a piece of America’s driving on the web travel organization XYZ Limited By giving most stretched out decision, predominant client benefit, least costs and unmatched advantages, ‘Organization Name’ has served more than 8 million clients. ‘Organization Name’ has a worldwide nearness with activities crosswise over Indonesia, Singapore, Malaysia, Colombia and Peru separated from America.</p>
+        <p>Resize the browser window to see that this page is responsive by the way.</p>
+      </div> -->
+
+      <div class="mySlides fade">
+
+        <img src="images/s1.jpeg" alt="place-photo">
+        <div class="text">Places</div>
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="images/flights.jpeg" alt="flight-pic">
+        <div class="text">Flights</div>
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="images/r.jpeg" alt="room-pic">
+        <div class="text">Room</div>
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="images/bb.jpeg" alt="beach-pic">
+        <div class="text">Beach</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+
+
+  function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+      </script>
+      <div id="London" class="tabcontent">
+  <h1>About Us</h1>
+  <p>Travelers is America’s biggest online transport ticketing stage that has changed transport travel in the nation by conveying straightforwardness and comfort to a great many Americas who travel utilizing transports. Established in 2006, ‘Organization Name’ is a piece of America’s driving on the web travel organization XYZ Limited By giving most stretched out decision, predominant client benefit, least costs and unmatched advantages, ‘Organization Name’ has served more than 8 million clients.Travelers has a worldwide nearness with activities crosswise over Indonesia, Singapore, Malaysia, Colombia and Peru separated from America.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h1>Hotels</h1>
+  <p>Hotel services include reception guests, room service, food service, including restaurants in the hotel, and security. Sometimes in the small hotels the duties of security, a cook and a cleaner are performed by the owner himself.
+    Budget and Value Hotels.
+  Inns and B&Bs.
+  Mid-Range Hotels and Business Hotels.
+  Family Hotels and Resorts.
+  Beach and Vacation Resorts.
+  Holiday Condo Resorts.</p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h1>Places</h1>
+  <p>Traditional Tourist Destination are like:
+(1) Beaches
+(2) Tropical Island Resort
+(3) Hiking and Camping in National Parks, Mountains, Deserts and Forests
+These are the places where you can spend your summer vacations
+
+Cultural Tourist Attractions are:
+(1) Historical Places
+(2) Monuments
+(3) Ancient Temples
+(4) Castles, Libraries and Former Prison
+(5) Museums or Art Galleries
+
+Attraction especially for Kids are like:
+(1) Theme Parks
+(2) Carnivals
+(3) Zoos and Aquaria
+(4) Botanical Gardens</p>
+</div>
+
+<div id="Oslo" class="tabcontent">
+  <h1>Flights</h1>
+  <p>Economy seats, commonly called travel or coach class, offer basic accommodations when you fly and are usually purchased by leisure travelers traveling for business or pleasure
+Premium economy seats, which are a slight improvement over standard economy seats and usually provide more distance between the rows of seats and occasionally may include seats that are a little bit wider and, therefore, more comfortable
+Business class, also called executive class seats, which are usually purchased by those traveling for business and which are usually a higher quality of seats
+First class seats, which offer the most comfortable accommodations available and are generally more expensive than all other types of seats</p>
+</div>
+
+<button class="tablink" onclick="openCity('London', this, '#474e5d')" id="defaultOpen">About</button>
+<button class="tablink" onclick="openCity('Paris', this, 'CadetBlue')">Hotels</button>
+<button class="tablink" onclick="openCity('Tokyo', this, 'LightSkyBlue')">Places</button>
+<button class="tablink" onclick="openCity('Oslo', this, 'DarkSlateGray')">Flights</button>
+
+
+ <footer class="foot_contact">
+
+   <h3 id="copyright">
+     <!-- <p> -->
+     &copy; Copyright 2020. All Rights Reserved. <br>
+     <a href="mailto:aman021011@gmail.com">travelagency@club.net</a>
+   <!-- </p> -->
+ </h3>
+   <h3 id="social">
+     Connect with Us<br>
+     <!-- <p><a href=""><img src="images/fblogo.png" alt="facebook logo"></a></p> -->
+     <a href="#" class="fa fa-facebook"></a>
+     <a href="#" class="fa fa-twitter"></a>
+     <a href="#" class="fa fa-instagram"></a>
+     <a href="#" class="fa fa-skype"></a>
+   </h3>
+
+ </footer>
+      </body>
+
+
+    </html>
