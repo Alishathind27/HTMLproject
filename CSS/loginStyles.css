@@ -1,3 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -120,26 +128,6 @@ text-decoration: none;
 }
 
 
-#copyright {
-  float: left;
-  padding: 1em;
-  width: 50%;
-  height: 15em;
-  background-color: #333;
-  margin: auto;
-  padding-top: 5em;
-}
-
-#social {
-  float: right;
-  margin: auto;
-  width: 50%;
-  height: 15em;
-  /* padding: 1em; */
-  padding-top: 5em;
-  background-color: #333;
-
-}
 
 
 
@@ -240,14 +228,11 @@ footer {
 
 .fa {
   padding: 20px;
-  font-size: 50px;
+  font-size: 30px;
   width: 50px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-  border-radius: 50%;
-  color: #ffffff;
-
 }
 
 .fa:hover {
@@ -271,4 +256,36 @@ footer {
 .fa-skype {
   background: #333;
   color: white;
+}
+
+#copyright {
+  float: left;
+  width: 50%;
+  height: 15em;
+  background-color: #333;
+  margin: auto;
+  padding-top: 5em;
+}
+
+#social {
+  float: right;
+  margin: auto;
+  width: 50%;
+  height: 15em;
+  padding-top: 5em;
+  background-color: #333;
+
+}
+img.mylogo{
+
+  width: 160px;
+  height: 50px;
+  margin: 0px;
+  background-color: #333;
+
+}
+
+a.mylogo{
+  padding: 0px;
+  margin-right: 20px;
 }

@@ -1,3 +1,16 @@
 body {
   background-image: url('../images/fly.jpeg');
 }
+img.mylogo{
+
+  width: 160px;
+  height: 50px;
+  margin: 0px;
+  background-color: #333;
+
+}
+
+a.mylogo{
+  padding: 0px;
+  margin-right: 20px;
+}

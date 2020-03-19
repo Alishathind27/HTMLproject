@@ -6,7 +6,6 @@
 
 }
 
-
 nav{
 	  height: auto;
 	  padding: 20px 10px;
@@ -68,7 +67,7 @@ nav{
   text-align: center;
 }
 
-#nav2 a.active {
+#nav1 a.active {
   background-color: #00BFFF;
   color: black;
 }
@@ -153,7 +152,7 @@ text-decoration: none;
 
 
 body {
-  background-image: url('../images/slider3.jpeg');
+  background-image: url('../images/tt.jpg');
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   /* padding: 0; */
@@ -232,4 +231,17 @@ footer {
   margin-bottom: 10px;
   text-align: center;
   /* font-family:monospace; */
+}
+img.mylogo{
+
+  width: 160px;
+  height: 50px;
+  margin: 0px;
+  background-color: #333;
+
+}
+
+a.mylogo{
+  padding: 0px;
+  margin-right: 20px;
 }
