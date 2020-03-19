@@ -20,7 +20,6 @@ body{
 
 
 
-
 body img{
   opacity: 0.4;
   height: 700px;
@@ -93,11 +92,10 @@ margin: 12px 0;
 margin-bottom: 0.05em;
 }
 
-img.mylogo{
 
-  width: 160px;
-  height: 50px;
-  margin: 0px;
-  background-color: #333;
 
+
+#nav1 a.active {
+  background-color: #00BFFF;
+  color: black;
 }

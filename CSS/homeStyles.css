@@ -90,6 +90,12 @@ text-decoration: none;
 }
  #nav2 li a:hover , .dropdown:hover .dropbtn{
   background-color: #00BFFF;
+
+}
+
+#nav2 li a.mylogo:hover{
+ background-color: #333;
+
 }
 
 
@@ -374,9 +380,9 @@ height: 550px;}
 }
 
 /* On smaller screens, decrease text size */
-/* @media only screen and (max-width: 300px) {
+@media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
-} */
+}
 
 
 
@@ -400,5 +406,3 @@ height: 550px;}
     padding: 0px;
     margin-right: 20px;
   }
-
-  
