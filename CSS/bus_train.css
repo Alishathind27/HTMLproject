@@ -7,6 +7,15 @@
 }
 
 
+
+/* img{
+  max-width: 100%;
+  opacity: 0.9;
+} */
+/* .trains h1{
+  text-align: center;
+  color: black;
+} */
 nav{
 	  height: auto;
 	  padding: 20px 10px;
@@ -219,12 +228,22 @@ font-size: 17px;
   min-height: 100vh
 
 } */
+
+
+
+#bg{
+  background-image: url('../images/train.jpeg');
+    opacity: 0.9;
+    height: 550px;
+}
 body {
-  background-image: url('../images/h.jpeg');
+
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   /* padding: 0; */
 align-items: center;
+
+
 
 justify-content: center;
 /* background-color: black; */
@@ -242,6 +261,8 @@ footer {
 
 
 }
+
+
 
 .fa {
   padding: 20px;
@@ -407,7 +428,7 @@ color: #ffecb3;
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 
 } */
-
+/*
 .container .row100{
   position: relative;
   width: 100%;
@@ -431,7 +452,7 @@ height: 40px;
 color: #333;
 
 
-}
+} */
 
 
 #hotels,#room, #cities{
@@ -540,4 +561,61 @@ padding: 10px 0;
   border-radius: 10px;
 
 
+}
+
+#bg{
+
+padding: 5em;
+
+}
+
+#bg {
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+ }
+
+
+ #information{
+   background-color: #195366;
+   height: 300px;
+   opacity: 0.9;
+
+ }
+
+ .column {
+
+   float: left;
+   width: 40%;
+   margin-left: 5%;
+
+ }
+
+ .row {
+   width: 90%;
+   margin: auto;
+   clear: both;
+   margin-bottom: 1em;
+   /* display: table; */
+ }
+
+ #book{
+   width: 20%;
+   height: 2em;
+   margin-left: 30%;
+   color: black;
+   margin-top: 1em;
+   background-color: white;
+
+ }
+
+
+#source, #destination, #checkin, #checkout{
+
+  font-size: 1em;
+  background-color: white;
+}
+
+p{
+  color: white;
 }

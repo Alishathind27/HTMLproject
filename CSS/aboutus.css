@@ -50,6 +50,7 @@ nav{
       font-size: 18px;
       line-height: 20px;
         border-radius: 3px;
+          opacity: 0.9;
 		}
 		#nav2{
 		  background-color: #333;

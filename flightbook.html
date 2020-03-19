@@ -4,8 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="CSS/hotelbook.css">
+    <link rel="stylesheet" href="CSS/flight.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Contact Page</title>
+
+
 
   </head>
   <body>
@@ -43,20 +47,21 @@
     	</nav>
 
 
-
+ <!-- <img src="images/u.jpeg" alt="contactimage"> -->
  <div class="container">
-     <h2>Book Your Stay Here</h2>
+  <strong> <h2>Book Flights Here</h2></strong> <br>
 
      <div class="row100">
        <div class="col">
          <div class="inputBox">
-        <strong>   <label for="hotels">Choose a Hotel:</label></strong>
+          <strong> <label for="hotels">Choose a Flight:</label></strong>
 
  <select id="hotels">
-   <option value="Redison Blue">Redison Blue, Scarbourough</option>
-   <option value="Hyatt">Hyatt</option>
-   <option value="Imperial">Imperial</option>
-   <option value="Mayur">Mayur</option>
+    <option value="Air India">Air India</option>
+   <option value="Air Canada">Air Canada</option>
+   <option value="Etihad">British Airways</option>
+
+   <option value="Cathey Pacific">Cathey Pacific</option>
  </select>
          </div>
          </div>
@@ -64,23 +69,64 @@
 
        <div class="col">
          <div class="inputBox">
-        <strong>   <label for="cars">Choose Room type:</label></strong>
+        <strong>   <label for="cars">Number of Travellers:</label></strong>
 
 <select id="room">
-  <option value="single">Single, CAD 300</option>
-<option value="double">Double, CAD 600</option>
-  <option value="Stereo">Stereo, CAD 750</option>
-  <option value="Deluxe">Deluxe, CAD 890</option>
+  <option value="1">1</option>
+<option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
 </select>
          </div>
          </div>
      </div>
 
+     <div class="row100">
+       <div class="col">
+         <div class="inputBox">
+        <strong>   <label for="cities">From</label></strong>
+
+<select id="cities">
+  <option value="Toronto">Toronto</option>
+<option value="Brampton">Brampton</option>
+  <option value="London">London</option>
+  <option value="South Korea">South Korea</option>
+  <option value="South Korea">Delhi</option>
+  <option value="South Korea">Ahmedabad</option>
+  <option value="South Korea">New York</option>
+</select>
+
+
+         </div>
+         </div>
+
+
+       <div class="col">
+         <div class="inputBox">
+      <strong>     <label for="cities">To</label></strong>
+
+<select id="cities">
+  <option value="South Korea">South Korea</option>
+  <option value="Toronto">Toronto</option>
+<option value="Brampton">Brampton</option>
+  <option value="London">London</option>
+
+  <option value="South Korea">Delhi</option>
+  <option value="South Korea">Ahmedabad</option>
+  <option value="South Korea">New York</option>
+</select>
+
+
+
+         </div>
+
+       </div>
+     </div>
 
      <div class="row100">
        <div class="col">
          <div class="inputBox">
-      <strong>     Check In: <br><input id="checkin" type="date" name="" required="required"></strong>
+      <strong>     Start Date: <br><input id="checkin" type="date" name="" required="required"></strong>
 
 
          </div>
@@ -89,7 +135,7 @@
 
        <div class="col">
          <div class="inputBox">
-      <strong>      Check Out: <br><input id="checkout" type="date" name= "" required="required"></strong><br><br>
+        <strong>    Return Date: <br><input id="checkout" type="date" name= "" required="required">  </strong><br><br>
 
 
 

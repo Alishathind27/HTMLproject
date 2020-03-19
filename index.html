@@ -28,9 +28,9 @@
       <li class="dropdown"> <a href="#" class="dropbtn"> Services</a>
 
     <div class="dropdown-content">
-      <a href="#">Hotel Booking Request</a>
-      <a href="#">Flight Ticket Booking Request</a>
-    <a href="#">Accomodation</a>
+      <a href="hotelbook.html">Hotel Booking Request</a>
+      <a href="flightbook.html">Flight Ticket Booking Request</a>
+    <a href="train_busbooking.html">Train/Bus Booking</a>
     <a href="#">Tour Program Request</a>
 
     </div>
@@ -44,47 +44,138 @@
 
 
 
+      <div class="mySlides fade">
 
-<div id="image-container">
+        <img src="images/s1.jpeg" alt="place-photo">
+        <!-- <div class="text">Places</div> -->
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="images/flights.jpeg" alt="flight-pic">
+        <!-- <div class="text">Flights</div> -->
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="images/r.jpeg" alt="room-pic">
+        <!-- <div class="text">Room</div> -->
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="images/bb.jpeg" alt="beach-pic">
+        <!-- <div class="text">Beach</div> -->
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div id="image-container">
 <img src="images/Travel wallpaper.jpg" alt="image" >
-</div>
-<h2 style="text-align:center">Reviews</h2>
+</div><br> -->
+<h2 style="text-align:center">Our Services</h2><br>
 <div class="row">
   <div class="column">
     <div class="card">
-      <img class="card" src="images/slider1.jpeg" alt="Jane" >
-      <div class="container">
-        <h2>Jane Doe</h2>
-        <p class="title">CEO & Founder</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>jane@example.com</p>
-        <p><button class="button">Contact</button></p>
+      <img class="card" src="images/slider4.jpeg" alt="go" >
+      <div class="container"><br>
+        <h2>Go Anywhere</h2><br>
+        <!-- <p class="title">CEO & Founder</p> -->
+        <p>You pick the place and we will make it <br>happen.Find the best flights and hotels<br>
+        and destination plan to make your trip <br>the best it can be.</p><br>
+        <!-- <p>jane@example.com</p> -->
+        <p>
+        <a href="ContactUs.html"><button class="button">Contact</button></a>
+        </p>
       </div>
     </div>
   </div>
 
   <div class="column">
     <div class="card">
-      <img class="card" src="images/slider2.jpeg" alt="Mike">
-      <div class="container">
-        <h2>Mike Ross</h2>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>mike@example.com</p>
-        <p><button class="button">Contact</button></p>
+      <img class="card" src="images/stress.jpeg" alt="stress">
+      <div class="container"><br>
+        <h2>No Stress</h2><br>
+        <!-- <p class="title">Art Director</p> -->
+        <p>There is no catch,no surprise and no hidden fees.Every expensive is given to your
+           upto front,so you can feel relaxed before and after
+            your trip.</p><br>
+        <!-- <p>mike@example.com</p> -->
+        <p>
+        <a href="ContactUs.html"><button class="button">Contact</button></a>
+        </p>
       </div>
     </div>
   </div>
 
   <div class="column">
     <div class="card">
-      <img class="card" src="images/slider4.jpeg" alt="John">
-      <div class="container">
-        <h2>John Doe</h2>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>john@example.com</p>
-        <p><button class="button">Contact</button></p>
+      <img class="card" src="images/choice.jpg" alt="choice">
+      <div class="container"><br>
+        <h2>Your Choice</h2><br>
+        <!-- <p class="title">Designer</p> -->
+        <p>Whether you like to plan things out or outdoor
+          spontaneous, we will help you score the best deals on everything from day trip to epic adventures.</p><br>
+        <!-- <p>john@example.com</p> -->
+        <p>
+        <a href="ContactUs.html"><button class="button">Contact</button></a>
+        </p>
       </div>
     </div>
   </div>

@@ -1,11 +1,12 @@
-body{
+*{
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  /* background-color: #1d1d1c; */
-  /* background: url(images/lgh.jpeg) no-repeat;*/
-  /* background-size: cover; */
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
 }
+
+
 nav{
 	  height: auto;
 	  padding: 20px 10px;
@@ -67,7 +68,7 @@ nav{
   text-align: center;
 }
 
-#nav1 a.active {
+#nav2 a.active {
   background-color: #00BFFF;
   color: black;
 }
@@ -141,6 +142,32 @@ text-decoration: none;
   background-color: #333;
 
 }
+
+
+
+
+
+
+
+
+
+
+body {
+  background-image: url('../images/slider3.jpeg');
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* padding: 0; */
+align-items: center;
+
+
+justify-content: center;
+/* background-color: black; */
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+
+}
+
 footer {
   font-size: 0.7em;
   text-align: center;
@@ -185,78 +212,24 @@ footer {
   color: white;
 }
 
-body img{
-  opacity: 0.4;
-  height: 700px;
-  width: 100%;
-  /* filter: blur(3px);
-  -webkit-filter: blur(3px); */
-}
+
 
 .container{
-  position: relative;
-  text-align: center;
-  color: black;
-}
-
-.register_text{
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  color: black;
-  font-size: 30px;
-  font-family:monospace;
-}
-
-.register-box{
-
-  color: black;
-  font-weight: bold;
-  border: 3px solid #000000;
-  position:absolute;
-  top: 66%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 30%;
+  width: 80%;
   padding: 20px;
+
+
+
+
+}
+
+
+
+.container h2{
+  width: 100%;
+  color: #333;
+  font-size: 45px;
+  margin-bottom: 10px;
   text-align: center;
-}
-
-
-.register-box h3{
-  float:left;
- font-size: 20px;
- padding: 7px 0;
-}
-
-.textbox1{
- width: 100%;
- overflow: hidden;
- font-size: 20px;
- padding: 8px 0;
- margin: 9px 0;
- border-bottom: 1px solid ;
-}
-
-.textbox1 input{
-  border: none;
-  outline: none;
-  background: none;
-  color: black;
-  font-size: 18px;
-  width: 50%;
-  float: left;
-  margin: 10px;
-}
-
-.register-box button{
-width: 40%;
-background-color: Gray;
-padding: 5px;
-font-size: 20px;
-cursor: pointer;
-margin: 12px 0;
-margin-bottom: 0.05em;
+  /* font-family:monospace; */
 }
