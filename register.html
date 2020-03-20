@@ -10,18 +10,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Register Page</title>
   </head>
-  <body>
 
+
+  <body>
 
     <nav id="nav1">
         <ul>
-
           <li><a class="active" href="register.html">Register</a></li>
           <li><a  href="LogIn.html">LogIn</a></li>
           <li><a href="myList.html">MyList</a></li>
-
         </ul>
       </nav>
+
   <nav id="nav2">
 
     <ul>
@@ -29,69 +29,66 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="aboutus.html">About Us</a></li>
 
-      <li class="dropdown"> <a href="#" class="dropbtn"> Services</a>
+    <li class="dropdown"> <a href="#" class="dropbtn"> Services</a>
 
     <div class="dropdown-content">
       <a href="hotelbook.html">Hotel Booking Request</a>
       <a href="flightbook.html">Flight Ticket Booking Request</a>
-    <a href="train_busbooking.html">Train/Bus Booking</a>
-
-
+      <a href="train_busbooking.html">Train/Bus Booking</a>
     </div>
 
-
-
-        </li>
+    </li>
 
     <li><a href="ContactUs.html">Contact Us</a></li>
     </ul>
 
-</nav>
+  </nav>
 
 
    <img src="images/tr.jpeg" alt="backgroundImage">
-
-       <div class="register-box">
+         <div class="register-box">
 
          <h3 >Already have an account? <a href="LogIn.html">Log in</a></h3>
+
          <div class="textbox1">
          <!-- <label for="fName"><b>First Name:</b></label> -->
-         <input type="text" placeholder="FirstName" name="uname" required><br><br>
+         <input type="text" placeholder="Username" name="uname" id="txt1" required><br><br>
          </div>
 
-         <div class="textbox1">
+         <!-- <div class="textbox1"> -->
          <!-- <label for="lName"><b>Last Name</b></label> -->
-         <input type="text" placeholder="LastName" name="lname" required><br><br>
+         <!-- <input type="text" placeholder="LastName" name="lname" id="txt2" required><br><br>
+         </div> -->
+
+         <div class="textbox1">
+         <!-- <label for="email"><b>Email:</b></label> -->
+         <input type="email" placeholder="Email" name="email" id="txt2" required><br><br>
          </div>
 
          <div class="textbox1">
          <!-- <label for="email"><b>Email:</b></label> -->
-         <input type="email" placeholder="Email" name="email" required><br><br>
-         </div>
-
-         <div class="textbox1">
-         <!-- <label for="email"><b>Email:</b></label> -->
-         <input type="password" placeholder="Password" name="password" required><br><br>
+         <input type="password" placeholder="Password" name="password" id="txt3" required><br><br>
          </div>
 
          <div class="textbox1">
          <!-- <label for="phoneNumber"><b>Phone no:</b></label> -->
-         <input type="number" placeholder="Contact No." name="password" required><br><br>
+         <input type="number" placeholder="Contact No." name="password" id="txt4" required><br><br>
          </div>
 
-         <button type="submit">Register</button>
+         <button type="button" onclick="addData()" >Register</button>
 
        </div>
 
-    </div>
+       <script type="text/javascript" src="Script.js"></script>
+    <!-- </div> -->
     <footer class="foot_contact">
 
-      <h3 id="copyright">
+        <h3 id="copyright">
 
         &copy; Copyright 2020. All Rights Reserved. <br>
         <a href="mailto:aman021011@gmail.com">travelagency@club.net</a>
 
-    </h3>
+        </h3>
       <h3 id="social">
         Connect with Us<br>
 

@@ -10,91 +10,83 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Trainbus</title>
 
-
-
   </head>
+
   <body>
     <nav id="nav1">
     	  <ul>
-
-    	    <li><a href="register.html">Register</a></li>
+          <li><a href="register.html">Register</a></li>
           <li><a href="LogIn.html">LogIn</a></li>
     	    <li><a href="myList.html">MyList</a></li>
+        </ul>
+    </nav>
 
-    	  </ul>
-    	</nav>
+
     	<nav id="nav2">
     	  <ul>
-
-<li><a class="mylogo" href="index.html"><img class="mylogo" src="images/logo3.png"></a></li>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="aboutus.html">About Us</a></li>
+          <li><a class="mylogo" href="index.html"><img class="mylogo" src="images/logo3.png"></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
 
       <li class="dropdown"> <a href="#" class="dropbtn"> Services</a>
 
-    <div class="dropdown-content">
-      <a href="hotelbook.html">Hotel Booking Request</a>
-      <a href="flightbook.html">Flight Ticket Booking Request</a>
-      <a href="train_busbooking.html">Train/Bus Booking</a>
+          <div class="dropdown-content">
+             <a href="hotelbook.html">Hotel Booking Request</a>
+             <a href="flightbook.html">Flight Ticket Booking Request</a>
+             <a href="train_busbooking.html">Train/Bus Booking</a>
+          </div>
+     </li>
+
+         <li><a  href="ContactUs.html">Contact Us</a></li>
+    	 </ul>
+  	</nav>
 
 
-    </div>
+      <section id="bg">
 
-
-
-        </li>
-    <li><a  href="ContactUs.html">Contact Us</a></li>
-    	  </ul>
-    	</nav>
-
-
-<section id="bg">
-
- <h1 align="center">Select Bus and Train Tickets</h1><br><br>
-<section width="80%" margin="auto" align="center">
-  <input class="public" type="radio" name="transport" value="train">&nbsp;Train</input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <input class="public" type="radio" name="transport" value="bus">&nbsp;Bus</input>
-</section>
+          <h1 align="center">Select Bus and Train Tickets</h1><br><br>
+              <section width="80%" margin="auto" align="center">
+                <input class="public" type="radio" name="transport" value="train">&nbsp;Train</input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="public" type="radio" name="transport" value="bus">&nbsp;Bus</input>
+              </section>
 
 <!-- <section width="80%" margin="auto" align="center">
   <input class="public" name="transport" value="train">&nbsp;Train</input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <input class="public" type="radio" name="transport" value="bus">&nbsp;Bus</input>
 </section> -->
+         <br><br>
 
+     <div class="row">
+       <div class="column">
+         <div class="inputBox">
+           <label for="source">Choose Source:</label>
 
-<br><br>
-
-<div class="row">
-  <div class="column">
-    <div class="inputBox">
-      <label for="source">Choose Source:</label>
-
-<select id="source">
-<option value="Quebec">Quebec</option>
-<option value="Montreal">Montreal</option>
-<option value="Toronto">Toronto</option>
-<option value="Brampton">Brampton</option>
-</select>
-    </div>
-    </div>
+             <select id="source">
+               <option value="Quebec">Quebec</option>
+               <option value="Montreal">Montreal</option>
+               <option value="Toronto">Toronto</option>
+               <option value="Brampton">Brampton</option>
+             </select>
+        </div>
+      </div>
 
 
   <div class="column">
     <div class="inputBox">
       <label for="destination">Choose Destination :</label>
 
-<select id="destination">
-<option value="single">Brampton</option>
-<option value="double">Quebec</option>
-<option value="Stereo">Toronto</option>
-<option value="Deluxe">Montreal</option>
-</select>
+            <select id="destination">
+              <option value="single">Brampton</option>
+              <option value="double">Quebec</option>
+              <option value="Stereo">Toronto</option>
+              <option value="Deluxe">Montreal</option>
+            </select>
     </div>
-    </div>
+  </div>
 </div>
 
-<div class="row">
-  <div class="column">
+   <div class="row">
+     <div class="column">
     <div class="inputBox">
       From: <br><input id="checkin" type="date" name="" required="required">
     </div>
@@ -103,38 +95,34 @@
   <div class="column">
     <div class="inputBox">
        To: <br><input id="checkout" type="date" name= "" required="required">
-     </div>
+      </div>
      </div>
    </div>
 
-<div class="row">
-
-  <button id="book">Book</button>
-
-</div>
-
-
+   <div class="row">
+       <button id="book">Book</button>
+   </div>
 
 </section>
-<br><br>
-<section id="information">
-  <br>
-  <div class="row">
-    <div class="column">
-      <h3>✔︎ Lowest Prices</h3> <br><br><br>
-      <p>We work directly with hundreds of carriers <br> to find the best available fares.
-      No Wanderu<br>
-       Fees
-      We never add any extra fees.We just<br> make it easy to book your travels.
-      Best Travel<br> Options
-      We help you find & compare
-       the best <br>buses, trains and flights in one place.</p>
-    </div>
+     <br><br>
+       <section id="information">
+        <br>
+      <div class="row">
+       <div class="column">
+        <h3>✔︎ Lowest Prices</h3> <br><br><br>
+          <p>We work directly with hundreds of carriers <br> to find the best available fares.
+          No Wanderu<br>
+          Fees
+          We never add any extra fees.We just<br> make it easy to book your travels.
+          Best Travel<br> Options
+          We help you find & compare
+          the best <br>buses, trains and flights in one place.</p>
+        </div>
     <div class="column">
 
     <h3>✔︎ Best Travel Options</h3> <br><br><br>
-    <p>
-    We help you find & compare the best buses, trains<br> and flights in one place.We never add any extra fees. <br>We just make it easy to book your travels.</p>
+     <p>
+      We help you find & compare the best buses, trains<br> and flights in one place.We never add any extra fees. <br>We just make it easy to book your travels.</p>
     </div>
   </div>
 
@@ -158,8 +146,6 @@
      <a href="#" class="fa fa-skype"></a>
    </h3>
 
- </footer>
-      </body>
-
-
-    </html>
+  </footer>
+ </body>
+</html>
