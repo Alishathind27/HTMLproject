@@ -6,13 +6,6 @@
 
 }
 
-body{
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-
-}
-
 nav{
 	  height: auto;
 	  padding: 20px 10px;
@@ -128,87 +121,25 @@ text-decoration: none;
 }
 
 
-
-
-
-
-
-body img{
-  opacity: 0.4;
-  height: 700px;
-  width: 100%;
-  /* filter: blur(3px);
-  -webkit-filter: blur(3px); */
-}
-
-.container{
-  position: relative;
-  text-align: center;
-  color: black;
-}
-
-.login_text{
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  color: black;
-  font-size: 30px;
-  font-family:monospace;
-}
-
-.login-box{
-
-  color: black;
-  font-weight: bold;
-  border: 3px solid #000000;
-  position:absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 30%;
-  padding: 20px;
-  text-align: center;
-}
-
- .login-box h3{
-   float:left;
-  font-size: 20px;
-  padding: 13px 0;
-}
-
-.textbox1{
-  width: 100%;
-  overflow: hidden;
-  font-size: 20px;
-  padding: 8px 0;
-  margin: 9px 0;
-  border-bottom: 1px solid ;
-
-}
-
-.textbox1 input{
-  border: none;
-  outline: none;
-  background: none;
-  color: black;
-  font-size: 18px;
-  width: 50%;
+#copyright {
   float: left;
-  margin: 10px;
+  padding: 1em;
+  width: 50%;
+  height: 15em;
+  background-color: #333;
+  margin: auto;
+  padding-top: 5em;
 }
 
-.login-box button{
-width: 40%;
-background-color: Gray;
-/* border: 2px solid ; */
-/* color: black; */
-padding: 5px;
-font-size: 20px;
-cursor: pointer;
-margin: 12px 0;
-margin-top: 2em;
+#social {
+  float: right;
+  margin: auto;
+  width: 50%;
+  height: 15em;
+  /* padding: 1em; */
+  padding-top: 5em;
+  background-color: #333;
+
 }
 
 
@@ -216,6 +147,25 @@ margin-top: 2em;
 
 
 
+
+
+
+
+body {
+  background-image: url('../images/tt.jpg');
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* padding: 0; */
+align-items: center;
+
+
+justify-content: center;
+/* background-color: black; */
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+
+}
 
 footer {
   font-size: 0.7em;
@@ -228,11 +178,14 @@ footer {
 
 .fa {
   padding: 20px;
-  font-size: 30px;
+  font-size: 50px;
   width: 50px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
+  border-radius: 50%;
+  color: #ffffff;
+
 }
 
 .fa:hover {
@@ -258,23 +211,26 @@ footer {
   color: white;
 }
 
-#copyright {
-  float: left;
-  width: 50%;
-  height: 15em;
-  background-color: #333;
-  margin: auto;
-  padding-top: 5em;
+
+
+.container{
+  width: 80%;
+  padding: 20px;
+
+
+
+
 }
 
-#social {
-  float: right;
-  margin: auto;
-  width: 50%;
-  height: 15em;
-  padding-top: 5em;
-  background-color: #333;
 
+
+.container h2{
+  width: 100%;
+  color: #333;
+  font-size: 45px;
+  margin-bottom: 10px;
+  text-align: center;
+  /* font-family:monospace; */
 }
 img.mylogo{
 

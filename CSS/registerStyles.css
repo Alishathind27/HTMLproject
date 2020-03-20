@@ -1,67 +1,24 @@
+
+
+
 body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  /* background-color: #1d1d1c; */
-  /* background: url(images/lgh.jpeg) no-repeat;*/
-  /* background-size: cover; */
-}
-
-header nav ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
 
 }
 
-header nav li{
-  display: inline;
-float: right;
-}
 
-header nav li a{
 
-  display: block;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  margin-right: 0.05em;
-  margin-top: 0.5em;
-}
 
-header li a:hover{
-  background-color: #111;
 
-}
 
-nav ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #1d1d1c;
-}
 
- nav li{
-  display: inline;
-}
 
- nav li a{
-  display: block;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  margin-left: 0.5em;
-  margin-top: 2em;
-  float: left;
-  height: 3em;
-}
 
- nav li a:hover{
-  background-color: red ;
-}
+
+
+
 
 body img{
   opacity: 0.4;
@@ -71,11 +28,7 @@ body img{
   -webkit-filter: blur(3px); */
 }
 
-.container{
-  position: relative;
-  text-align: center;
-  color: black;
-}
+
 
 .register_text{
   position: absolute;
@@ -137,4 +90,12 @@ font-size: 20px;
 cursor: pointer;
 margin: 12px 0;
 margin-bottom: 0.05em;
+}
+
+
+
+
+#nav1 a.active {
+  background-color: #00BFFF;
+  color: black;
 }
