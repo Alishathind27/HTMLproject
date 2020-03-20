@@ -50,7 +50,6 @@ nav{
 		}
 
 
-
     #nav1 a:hover {
       background-color: #00BFFF;
       color: black;
@@ -114,7 +113,20 @@ text-decoration: none;
   display: block;
 }
 
+section h2{
+  margin-top: 1em;
+  margin-left: 13%;
+  font-family: cursive;
+}
+section ol{
+  margin-top: 5em;
+  margin-left: 10%;
+}
 
+section li{
+  margin-left: 15%;
+  margin-right: 15%;
+}
  footer a {
   color: #00BFFF;
   text-decoration: none;
@@ -141,14 +153,6 @@ text-decoration: none;
   background-color: #333;
 
 }
-
-
-
-
-
-
-
-
 
 
 body {

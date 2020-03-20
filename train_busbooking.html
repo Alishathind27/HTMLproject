@@ -46,8 +46,8 @@
 
           <h1 align="center">Select Bus and Train Tickets</h1><br><br>
               <section width="80%" margin="auto" align="center">
-                <input class="public" type="radio" name="transport" value="train">&nbsp;Train</input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input class="public" type="radio" name="transport" value="bus">&nbsp;Bus</input>
+                <input class="public" type="radio" name="transport" value="Train">&nbsp;Train</input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="public" type="radio" name="transport" value="Bus">&nbsp;Bus</input>
               </section>
 
 <!-- <section width="80%" margin="auto" align="center">
@@ -76,10 +76,10 @@
       <label for="destination">Choose Destination :</label>
 
             <select id="destination">
-              <option value="single">Brampton</option>
-              <option value="double">Quebec</option>
-              <option value="Stereo">Toronto</option>
-              <option value="Deluxe">Montreal</option>
+              <option value="Brampton">Brampton</option>
+              <option value="Quebec">Quebec</option>
+              <option value="Toronto">Toronto</option>
+              <option value="Montreal">Montreal</option>
             </select>
     </div>
   </div>
@@ -204,12 +204,12 @@
    }
    else{
 
-   let newStuffToAdd = ("Train or Bus Booking \n" +
-                       "Train/Bus:" + TransportType +"\n" +
-                       "From: " + FromCity + "\n" +
-                       "To: " + ToCity +"\n" +
-                       "CheckIn: " + CheckIn + "\n" +
-                       "CheckOut: " + CheckOut);
+   let newStuffToAdd = ("Train or Bus Booking:  \n" +
+                       "Train/Bus - " + TransportType +",  " +
+                       "From - " + FromCity + ",  " +
+                       "To - " + ToCity +",  " +
+                       "CheckIn - " + CheckIn + ",  " +
+                       "CheckOut - " + CheckOut);
    // Checkin : 12 dec 2019 - Checout: 13 dec 2018"; // static
 
 

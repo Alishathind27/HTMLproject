@@ -54,8 +54,8 @@
       <select id="flight">
          <option value="Air India">Air India</option>
          <option value="Air Canada">Air Canada</option>
-         <option value="Etihad">British Airways</option>
-         <option value="Cathey Pacific">Jet Airways</option>
+         <option value="British Airways">British Airways</option>
+         <option value="Jet Airways">Jet Airways</option>
          <option value="Cathey Pacific">Cathey Pacific</option>
      </select>
 
@@ -89,9 +89,9 @@
                   <option value="Brampton">Brampton</option>
                   <option value="London">London</option>
                   <option value="South Korea">South Korea</option>
-                  <option value="South Korea">Delhi</option>
-                  <option value="South Korea">Ahmedabad</option>
-                  <option value="South Korea">New York</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Ahmedabad">Ahmedabad</option>
+                  <option value="New York">New York</option>
                 </select>
 
            </div>
@@ -107,9 +107,9 @@
                    <option value="Toronto">Toronto</option>
                    <option value="Brampton">Brampton</option>
                    <option value="London">London</option>
-                   <option value="South Korea">Delhi</option>
-                   <option value="South Korea">Ahmedabad</option>
-                   <option value="South Korea">New York</option>
+                   <option value="Delhi">Delhi</option>
+                   <option value="Ahmedabad">Ahmedabad</option>
+                   <option value="New York">New York</option>
                </select>
           </div>
       </div>
@@ -231,14 +231,14 @@ let getreq = t.get("logInUser"); // (3)
    alert("You have to logIn first.");
   }
   else{
-       let newStuffToAdd = ("Flight Booking \n" +
-                     "Flight Name:" + FlightName +"\n" +
-                     "No of Travellers:" + NoOfTravelllers + "\n" +
-                     "From: " + FromCity + "\n" +
-                     "To: " + ToCity +"\n" +
-                     "CheckIn: " + CheckIn + "\n" +
-                     "CheckOut: " + CheckOut);
- 
+       let newStuffToAdd = ("Flight Booking:  \n" +
+                     "Flight Name - " + FlightName + ",  " +
+                     "No of Travellers - " + NoOfTravelllers + ",  " +
+                     "From - " + FromCity + ",  " +
+                     "To - " + ToCity + ",  " +
+                     "CheckIn - " + CheckIn + ",  " +
+                     "CheckOut - " + CheckOut );
+
    let readReq = t.get(username);
    readReq.onsuccess = function(){
 

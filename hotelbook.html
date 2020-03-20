@@ -46,11 +46,11 @@
                <strong> <label for="hotels">Choose a Hotel:</label></strong>
 
                   <select id="hotels">
-                     <option value="Redison Blue">Radisson Blue, Scarbourough</option>
-                     <option value="Hyatt">Hyatt, Iran</option>
-                     <option value="Imperial">Imperial, England</option>
-                     <option value="Mayur">Mayur Hotels, Toronto</option>
-                     <option value="Imperial">Army Hotel, America</option>
+                     <option value="Redison Blue(Scarbourough)">Redison Blue(Scarbourough)</option>
+                     <option value="Hyatt(Iran)">Hyatt(Iran)</option>
+                     <option value="Imperial(England)">Imperial(England)</option>
+                     <option value="Mayur(Toronto)">Mayur(Toronto)</option>
+                     <option value="Army Hotel(America)">Army Hotel(America)</option>
                   </select>
           </div>
         </div>
@@ -61,10 +61,10 @@
             <strong> <label for="cars">Choose Room type:</label></strong>
 
                <select id="room">
-                  <option value="single">Single, CAD 300</option>
-                  <option value="double">Double, CAD 600</option>
-                  <option value="Stereo">Stereo, CAD 750</option>
-                  <option value="Deluxe">Deluxe, CAD 890</option>
+                  <option value="Single [CAD 300]">Single [CAD 300]</option>
+                  <option value="double [CAD 600]">double [CAD 600]</option>
+                  <option value="Stereo [CAD 750]">Stereo [CAD 750]</option>
+                  <option value="Deluxe [CAD 890]">Deluxe [CAD 890]</option>
                </select>
          </div>
       </div>
@@ -172,11 +172,11 @@
     }
     else{
 
-    let newStuffToAdd = ("Hotel Booking \n" +
-                        "Hotel Name:" + HotelName +"\n" +
-                        "Room Type:" + RoomType + "\n" +
-                        "CheckIn: " + CheckIn + "\n" +
-                        "CheckOut: " + CheckOut);
+    let newStuffToAdd = ("Hotel Booking:  \n" +
+                        "Hotel Name -  " + HotelName +",  " +
+                        "Room Type - " + RoomType + ",  " +
+                        "CheckIn - " + CheckIn + ",  " +
+                        "CheckOut - " + CheckOut );
       let readReq = t.get(username);
       readReq.onsuccess = function(){
 

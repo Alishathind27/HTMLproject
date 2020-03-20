@@ -36,23 +36,16 @@
     <li><a href="ContactUs.html">Contact Us</a></li>
     	  </ul>
     	</nav>
-
-
 <br>
 
  <section class="container">
-     <h2>My List</h2>
-
-
-     <ul id="list">
-
-     </ul>
-
+     <h2 >My List</h2>
+       <ol id="list">
+       </ol>
  </section>
 
 
-
- <footer class="foot_contact">
+<footer class="foot_contact">
 
    <h3 id="copyright">
      <!-- <p> -->
@@ -131,27 +124,22 @@
               var s = "";
 
               for (var i = 0; i<list.length; i++){
-                s+= "<li>"+list[i]+"</li>"
+                s+= "<li>"+list[i]+"</li><br><br><br>";
               }
-
               ul.innerHTML = s;
             };
 
           };
-
-
-    };
+  };
 
   openRequest.onerror = function() {
   console.log("Error", request.error);
     };
-
-    // function ends(onsuccess)
+  // function ends(onsuccess)
 
   openRequest.onblocked = function() {
   console.log("on block called");
   };
-
 
       </script>
     </body>

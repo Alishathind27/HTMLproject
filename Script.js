@@ -186,7 +186,7 @@ let t = transaction.objectStore("register_table"); // (2)
   let addRequest = t.put(data); // (3)
 
   addRequest.onsuccess = function() { // (4)
-  alert("log in successful");
+  alert("LogIn successful");
   window.location.href = "index.html";
   };
 
@@ -261,7 +261,7 @@ function logout(){
      let addRequest = t.put(data); // (3)
 
     addRequest.onsuccess = function() { // (4)
-    alert("you are logged out successfully");
+    alert("You are logged out successfully");
     window.location.href = "index.html";
     };
 
@@ -323,7 +323,7 @@ function logIn(){
     console.log(received)
 
     if (received == null){
-      alert("user nor registered");
+      alert("User nor registered");
     }else{
        if(pw == received.password){
 
@@ -334,7 +334,7 @@ function logIn(){
 
 
     }else{
-      alert("wrong password");
+      alert("Wrong password");
     }
     }
 };
