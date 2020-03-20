@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Contact Page</title>
   </head>
+
+
   <body>
     <nav id="nav1">
     	  <ul>
 
-    	    <li><a href="register.html">Register</a></li>
-          <li><a href="LogIn.html">LogIn</a></li>
-    	    <li><a href="myList.html">MyList</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a id="login" onclick="loginLogout()" >LogIn</a></li>
+          <li><a id="mylist" href="myList.html">MyList</a></li>
 
     	  </ul>
     	</nav>
@@ -126,7 +128,14 @@
    </h3>
 
  </footer>
-      </body>
+
+ <script type="text/javascript" src="Script.js"></script>
+
+ <script type="text/javascript">
+   checkLoginUser();
 
 
-    </html>
+ </script>
+
+    </body>
+</html>

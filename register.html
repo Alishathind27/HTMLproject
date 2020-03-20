@@ -16,9 +16,9 @@
 
     <nav id="nav1">
         <ul>
-          <li><a class="active" href="register.html">Register</a></li>
-          <li><a  href="LogIn.html">LogIn</a></li>
-          <li><a href="myList.html">MyList</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a id="login" onclick="loginLogout()" >LogIn</a></li>
+          <li><a id="mylist" href="myList.html">MyList</a></li>
         </ul>
       </nav>
 
@@ -99,5 +99,13 @@
       </h3>
 
     </footer>
+
+    <script type="text/javascript" src="Script.js"></script>
+
+    <script type="text/javascript">
+      checkLoginUser();
+
+
+    </script>
   </body>
 </html>

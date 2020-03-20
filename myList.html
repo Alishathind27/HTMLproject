@@ -12,9 +12,9 @@
     <nav id="nav1">
     	  <ul>
 
-    	    <li><a href="register.html">Register</a></li>
-          <li><a href="LogIn.html">LogIn</a></li>
-    	    <li><a class ="active" href="myList.html">MyList</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a id="login" onclick="loginLogout()" >LogIn</a></li>
+          <li><a id="mylist" href="myList.html">MyList</a></li>
 
     	  </ul>
     	</nav>
@@ -47,7 +47,14 @@
  <div class="container">
      <h2>My List</h2>
 
+
+     <ul id="mylist">
+
+     </ul>
+
  </div>
+
+
 
  <footer class="foot_contact">
 
@@ -67,6 +74,103 @@
    </h3>
 
  </footer>
+
+<script type="text/javascript">
+
+// checkLoginUser();
+// open Database
+let openRequest = indexedDB.open("Travel_Database", 1);
+
+// call when create table
+openRequest.onupgradeneeded = function() {
+console.log("OUN");
+
+// add table code
+  let db = openRequest.result;
+  if (!db.objectStoreNames.contains('register_table')) {
+  db.createObjectStore('register_table', {keyPath: 'username'});
+}
+};
+
+// if error occurs
+openRequest.onerror = function() {
+console.log("err");
+};
+
+// call when adding data
+openRequest.onsuccess = function() {
+console.log("success");
+
+
+
+let db = openRequest.result;
+db.onversionchange = function() {
+db.close();
+};
+
+// add data to table - code
+let transaction = db.transaction("register_table", "readwrite"); // (1)
+let t = transaction.objectStore("register_table"); // (2)
+
+
+
+
+
+  let r = t.get("logInUser"); // (3)
+
+  r.onsuccess = function() { // (4)
+
+    var u = r.result.value;
+
+          let r2 = t.get(u); // (3)
+
+          r2.onsuccess = function() { // (4)
+
+            var user_data = r2.result;
+            var list = user_data.mylist;
+
+            var ul = document.getElementById("mylist");
+
+            var s = "";
+
+            for (var i = 0; i<list.length; i++){
+              s+= "<li>"+list[i]+"</li>"
+            }
+
+            ul.innerHTML = s;
+          };
+
+        };
+
+
+  };
+
+
+
+
+
+  openRequest.onerror = function() {
+console.log("Error", request.error);
+  };
+
+  // function ends(onsuccess)
+
+openRequest.onblocked = function() {
+console.log("on block called");
+};
+
+
+
+
+</script>
+
+<script type="text/javascript" src="Script.js"></script>
+
+<script type="text/javascript">
+  checkLoginUser();
+
+
+</script>
       </body>
 
 

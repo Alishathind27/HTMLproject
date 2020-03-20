@@ -16,8 +16,8 @@
     <nav id="nav1">
     	  <ul>
           <li><a href="register.html">Register</a></li>
-          <li><a href="LogIn.html">LogIn</a></li>
-    	    <li><a href="myList.html">MyList</a></li>
+          <li><a id="login" onclick="loginLogout()" >LogIn</a></li>
+          <li><a id="mylist" href="myList.html">MyList</a></li>
         </ul>
     </nav>
 
@@ -100,7 +100,7 @@
    </div>
 
    <div class="row">
-       <button id="book">Book</button>
+       <button id="book" type="button" onclick="addToMyList()">Book</button>
    </div>
 
 </section>
@@ -147,5 +147,118 @@
    </h3>
 
   </footer>
+
+  <script type="text/javascript">
+
+  function addToMyList(){
+  // open Database
+  let openRequest = indexedDB.open("Travel_Database", 1);
+
+  // call when create table
+  openRequest.onupgradeneeded = function() {
+  console.log("OUN");
+
+  // add table code
+    let db = openRequest.result;
+    if (!db.objectStoreNames.contains('register_table')) {
+    db.createObjectStore('register_table', {keyPath: 'username'});
+  }
+  };
+
+  // if error occurs
+  openRequest.onerror = function() {
+  console.log("err");
+  };
+
+  // call when adding data
+  openRequest.onsuccess = function() {
+
+
+  console.log("success - add to my list");
+
+  var TransportType = document.getElementById('bg').value;
+  var FromCity = document.getElementById('source').value;
+  var ToCity = document.getElementById('destination').value;
+  var CheckIn = document.getElementById('checkin').value;
+  var CheckOut = document.getElementById('checkout').value;
+
+  let db = openRequest.result;
+  db.onversionchange = function() {
+  db.close();
+  };
+
+  // add data to table - code
+  let transaction = db.transaction("register_table", "readwrite"); // (1)
+  let t = transaction.objectStore("register_table");
+
+
+  let getreq = t.get("logInUser"); // (3)
+
+   getreq.onsuccess = function() {
+     console.log("log in - on success called"); // (4)
+   var data = getreq.result;
+   var username = data.value;
+
+   let newStuffToAdd = ("Train or Bus Booking \n" +
+                       "Train/Bus:" + TransportType +"\n" +
+                       "From: " + FromCity + "\n" +
+                       "To: " + ToCity +"\n" +
+                       "CheckIn: " + CheckIn + "\n" +
+                       "CheckOut: " + CheckOut);
+   // Checkin : 12 dec 2019 - Checout: 13 dec 2018"; // static
+
+
+     let readReq = t.get(username);
+     readReq.onsuccess = function(){
+
+       console.log("success - readReq");
+
+       var userdata = readReq.result;
+
+       console.log(userdata);
+
+       var mylistArray = userdata.mylist;
+
+       mylistArray.push(newStuffToAdd);
+
+       let data = {
+          username: userdata.username,
+          // name: name,
+          email: userdata.email,
+          password: userdata.password,
+          phone: userdata.phone,
+          mylist: mylistArray
+          };
+
+                 let addRequest = t.put(data); // (3)
+
+                 addRequest.onsuccess = function() { // (4)
+                 alert("Successfully added to mylist");
+                 };
+
+                 addRequest.onerror = function() {
+                 console.log("Error", request.error);
+       };
+     }
+
+  }
+
+
+  // function ends(onsuccess)
+  };
+  openRequest.onblocked = function() {
+  console.log("on block called");
+  };
+
+  // function ends
+  }
+  </script>
+  <script type="text/javascript" src="Script.js"></script>
+
+  <script type="text/javascript">
+    checkLoginUser();
+
+
+  </script>
  </body>
 </html>
