@@ -167,6 +167,11 @@
     var data = getreq.result;
     var username = data.value;
 
+    if(username == ""){
+     alert("You have to logIn first.");
+    }
+    else{
+
     let newStuffToAdd = ("Hotel Booking \n" +
                         "Hotel Name:" + HotelName +"\n" +
                         "Room Type:" + RoomType + "\n" +
@@ -204,7 +209,8 @@
                   console.log("Error", request.error);
         };
       }
-
+     }
+     // end of else statement
    }
 
 

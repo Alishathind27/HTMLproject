@@ -199,6 +199,11 @@
    var data = getreq.result;
    var username = data.value;
 
+   if(username == ""){
+    alert("You have to logIn first.");
+   }
+   else{
+
    let newStuffToAdd = ("Train or Bus Booking \n" +
                        "Train/Bus:" + TransportType +"\n" +
                        "From: " + FromCity + "\n" +
@@ -240,7 +245,7 @@
                  console.log("Error", request.error);
        };
      }
-
+   }
   }
 
 

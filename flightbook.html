@@ -11,14 +11,9 @@
 
 </head>
 
+<body>
 
-  <body>
-
-
-
-
-
-    <nav id="nav1">
+<nav id="nav1">
     	  <ul>
           <li><a href="register.html">Register</a></li>
           <li><a id="login" onclick="loginLogout()" >LogIn</a></li>
@@ -178,7 +173,9 @@
 <script type="text/javascript">
 
 // checkLoginUser();
-
+// function check(){
+//   if
+// }
 function addToMyList(){
 // open Database
 let openRequest = indexedDB.open("Travel_Database", 1);
@@ -229,16 +226,19 @@ let getreq = t.get("logInUser"); // (3)
  var data = getreq.result;
  var username = data.value;
 
- let newStuffToAdd = ("Flight Booking \n" +
+
+  if(username == ""){
+   alert("You have to logIn first.");
+  }
+  else{
+       let newStuffToAdd = ("Flight Booking \n" +
                      "Flight Name:" + FlightName +"\n" +
                      "No of Travellers:" + NoOfTravelllers + "\n" +
                      "From: " + FromCity + "\n" +
                      "To: " + ToCity +"\n" +
                      "CheckIn: " + CheckIn + "\n" +
                      "CheckOut: " + CheckOut);
- // Checkin : 12 dec 2019 - Checout: 13 dec 2018"; // static
-
-
+ 
    let readReq = t.get(username);
    readReq.onsuccess = function(){
 
@@ -271,7 +271,7 @@ let getreq = t.get("logInUser"); // (3)
                console.log("Error", request.error);
      };
    }
-
+}
 }
 
 
