@@ -45,9 +45,9 @@
       <section id="bg">
 
           <h1 align="center">Select Bus and Train Tickets</h1><br><br>
-              <section width="80%" margin="auto" align="center">
-                <input class="public" type="radio" name="transport" value="Train">&nbsp;Train</input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input class="public" type="radio" name="transport" value="Bus">&nbsp;Bus</input>
+              <section width="80%" margin="auto"  align="center">
+                <input class="public" type="radio" id="type1" name="transport" value="Train">&nbsp;Train</input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="public" type="radio" id="type2" name="transport" value="Bus">&nbsp;Bus</input>
               </section>
 
 <!-- <section width="80%" margin="auto" align="center">
@@ -176,7 +176,19 @@
 
   console.log("success - add to my list");
 
-  var TransportType = document.getElementById('bg').value;
+  var train = document.getElementById('type1');
+  var bus = document.getElementById('type2');
+  var TransportType;
+
+
+    if(train.checked){
+        TransportType = "Train";
+    }
+    else if(bus.checked){
+        TransportType = "Bus";
+    }
+
+
   var FromCity = document.getElementById('source').value;
   var ToCity = document.getElementById('destination').value;
   var CheckIn = document.getElementById('checkin').value;

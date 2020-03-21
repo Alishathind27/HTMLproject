@@ -30,7 +30,11 @@ var email = document.getElementById('txt2').value;
 var password = document.getElementById('txt3').value;
 var phone = document.getElementById('txt4').value;
 
-
+if(username == "" || email == "" || password == "" || phone == ""){
+  alert("All fields are required.");
+}
+else{
+  
 let db = openRequest.result;
 db.onversionchange = function() {
 db.close();
@@ -59,7 +63,7 @@ let addRequest = t.add(data); // (3)
 addRequest.onerror = function() {
 console.log("Error", request.error);
   };
-
+}
   // function ends(onsuccess)
 };
 openRequest.onblocked = function() {
@@ -301,6 +305,11 @@ function logIn(){
    var userName = document.getElementById('txt1').value;
    var password = document.getElementById('txt2').value;
 
+   if(userName == "" & password == ""){
+     alert("All fields must be filled.");
+   }
+   else{
+
     let db = openRequest.result;
     db.onversionchange = function() {
     db.close();
@@ -343,6 +352,7 @@ function logIn(){
   console.log("Error", readReq.error);
     };
 // success function ends
+}
 };
 
 
